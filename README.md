@@ -23,13 +23,15 @@ kill_sessions_by_udid(udid="SERIAL CODE OF UR DEVICE", port=4723) # port specifi
 
 # get sessions inside a list
 MyDevicesSessions = get_sessions_of_udid(udid="SERIAL CODE", port=4723)
-
-# kill a list of sessions
+# example: kill a list of sessions
 kill_sessions(session_list=MyDevicesSessions)
 
 # get_sessions_of_udid is tricky, it uses udid by default but you can specify whatever desired capability you want
 AndroidSessions = get_sessions_of_udid(udid="Android", desired_cap="PlatformName", port=4723)
 kill_sessions(session_list=AndroidSessions, port=4723) # Kill any android session
+
+# Very useful if you set some "custom" capabilities, this hack is provided by zio Franco
+sessions_of_uploading_device = get_sessions_of_udid(udid="upload", desired_cap="custom:activity", port=4723)
 ```
 ## check if device is busy
 ```python
