@@ -53,7 +53,7 @@ def get_udid_of_sessions(session_list, port=10071, desiredcap="udid", host="loca
     udid_list = []
 
     for session_id in session_list:
-        resp = requests.get("http://" + host + ":" + str(port) + "/session/" + )
+        resp = requests.get("http://" + host + ":" + str(port) + "/session/" + session_id)
         json_data = json.loads(resp.text)
         udid_list.append(json_data["value"]["desired"][desiredcap])
 
