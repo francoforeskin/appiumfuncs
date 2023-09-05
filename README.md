@@ -14,7 +14,7 @@ This readme is basically longer than the code itself
 # how to use it
 ## import every function
 ```python
-from appiumfuncs import *
+from sessionfuncs import *
 ```
 ## kill sessions
 ```python
