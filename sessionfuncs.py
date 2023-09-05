@@ -47,3 +47,14 @@ def busy_devices(port=10071, desiredcap="udid", host="localhost"):
         device_list.append(json_data["value"][n]["capabilities"]["desired"][desiredcap])
 
     return device_list
+
+
+def get_udid_of_sessions(session_list, port=10071, desiredcap="udid", host="localhost"):
+    udid_list = []
+
+    for session_id in session_list:
+        resp = requests.get("http://" + host + ":" + str(port) + "/session/" + )
+        json_data = json.loads(resp.text)
+        udid_list.append(json_data["value"]["desired"][desiredcap])
+
+    return udid_list
