@@ -31,7 +31,7 @@ def screen_element(el, path=None):
     img_data = el.screenshot_as_base64
 
     if path is None:
-        with tempfile.NamedTemporaryFile() as image:
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as image:
             image.write(base64.b64decode(img_data))
         image.close()
         return image.name
@@ -43,5 +43,9 @@ def screen_element(el, path=None):
 
 
 # MAYBE TODO:
+# [ ] els under el
+# [ ] els ontop of el
+# [ ] els at right of el
+# [ ] els left of el
 # [ ] tesseract on base64 screenshot
 # [ ] opencv on base64 screenshot
