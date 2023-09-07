@@ -1,5 +1,4 @@
-# default object
-
+# This software is licensed under the DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
 class sessionfuncs():
     def __init__(self, port=4723, host="localhost"):
         self.port=port
