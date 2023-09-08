@@ -5,6 +5,8 @@ I made those little functions in order to regulate better appium scripts who goe
 Having a suite of appium scripts that operate on multiple devices, sometimes simultaneusly on the same device, instead of relying on something pervert like signal handlers or databases I made this tiny lib.
 ## elfuncs
 Those functions works with elements, they do sorting by coordinates and there's a tesseract implementation for finding text inside elements who doesn't have text specified within attributes
+
+<br clear=all>
 ![U professor](https://github.com/francoforeskin/appiumfuncs/blob/master/prof.jpg)
 ## Requirements
 ### sessionfuncs
