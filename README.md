@@ -54,5 +54,5 @@ elements = find_elements( ... )
 ef.sort_elements_from_bottom(elements)
 
 for el in elements:
-	print(element_text_tesseract(el))
+	print(ef.element_text_tesseract(el))
 ```
