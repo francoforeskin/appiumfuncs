@@ -37,8 +37,7 @@ if sf.is_udid_busy(udid="SERIAL CODE"):
 else:
 	print("Device is not used by any sessions")
 ```
-## the genius
-![Invented the telephone](https://github.com/francoforeskin/appiumfuncs/blob/master/genius.jpg)
+## a little trick
 ```python
 # set custom capabilities and manage the device with it.
 # Too lazy to show you how, figure it out by yourself.
